@@ -1,7 +1,7 @@
 ---
 title: "HW(1) Project"
-author: "John Doe" # your name
-date: "1/31/2022" # today
+author: "Yassine Dahbi" # your name
+date: "02/07/2022" # today
 output: pdf_document
 ---
 
@@ -9,7 +9,7 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE, error = TRUE, eval = TRUE)
 ```
 
-# Run this line first
+# Run this code first
 ```{r, include=FALSE}
 if (!require('ggplot2')) install.packages('ggplot2'); library('ggplot2') 
 ```
@@ -24,7 +24,7 @@ q2 <- ggplot(mpg, aes(fl, fill = drv)) # creating my variable `q2` # Do not modi
 ```
 
 ```{r, out.width='50%'}
-# remove this comment and answer here
+s + geom_bar(position = "dodge")
 ```
 
 # Q3. Find `ONE VARIABLE continuous` section and apply one of its methods with your comment 
@@ -33,7 +33,7 @@ q3 <- ggplot(mpg, aes(hwy)) # creating my variable `q3` # Do not modify this lin
 ```
 
 ```{r, out.width='50%'}
-# remove this comment and answer here
+c + geom_density(kernel = "gaussian")
 ```
 
 # Q4. Find `COLOR AND FILL SCALES (CONTINUOUS)` section and apply one of its methods with your comment 
@@ -42,7 +42,7 @@ q4 <- q3 + geom_dotplot(aes(fill = ..x..)) # Creating my variable `q4` # Do not 
 ```
 
 ```{r, out.width='50%'}
-# remove this comment and answer here
+o + scale_fill_distiller(palette = “Blues”)
 ```
 
 # Q5. Find `both discrete` section and apply one of its methods with your comment 
@@ -51,7 +51,7 @@ q5 <- ggplot(mpg, aes(cyl, hwy)) # Creating my variable `q5` # Do not modify thi
 ```
 
 ```{r, out.width='50%'}
-# remove this comment and answer here
+n + scale_fill_brewer(palette = "Blues")
 ```
 
 ### *End of document*
